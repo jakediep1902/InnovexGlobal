@@ -3,79 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InnovexGlobal</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section .info {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section .info h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        section .info p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        section .info .contact {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        section .images {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section .images img {
+            width: 48%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Header -->
+
     <header>
-        <div class="container">
-            <h1 class="logo">InnovexGlobal</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Welcome to Innovex Global</h1>
+        <p>Your trusted partner in export and technology solutions</p>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Bringing Innovation to Global Markets</h2>
-            <p>We provide top-quality products and export services worldwide.</p>
-            <a href="#services" class="btn">Explore Our Services</a>
+    <section>
+        <div class="info">
+            <h2>About Us</h2>
+            <p>InnovexGlobal specializes in innovative technology solutions and high-quality export services. We bridge the gap between businesses globally with cutting-edge technologies and efficient export practices.</p>
+            <p class="contact">Contact us at: +84 84949 6767</p>
+        </div>
+
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200" alt="Technology Image 1">
+            <img src="https://via.placeholder.com/300x200" alt="Export Image 1">
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About InnovexGlobal</h2>
-            <p>InnovexGlobal is a leading export and technology company specializing in delivering innovative solutions across the globe. With years of expertise in both technology and international trade, we offer customized export solutions and advanced technological products for various industries.</p>
+    <section>
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200" alt="Technology Image 2">
+            <img src="https://via.placeholder.com/300x200" alt="Export Image 2">
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
+        <div class="info">
             <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Technology Exports</h3>
-                <p>We export cutting-edge technology products, including hardware, software, and integrated systems, to markets around the world.</p>
-            </div>
-            <div class="service-item">
-                <h3>International Trade Solutions</h3>
-                <p>Our team helps connect businesses globally with reliable trade solutions and strategies tailored to your needs.</p>
-            </div>
-            <div class="service-item">
-                <h3>Export Consultation</h3>
-                <p>We offer expert consultation services to help businesses navigate the complexities of international export regulations and strategies.</p>
-            </div>
+            <p>We offer a range of services to our clients, including technology consulting, product export, and business strategy development. Our team is dedicated to helping you succeed in the global market.</p>
+            <p class="contact">Call us now: +84 4949 6767</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For more information or partnership inquiries, please reach out to us:</p>
-            <ul>
-                <li>Email: info@innovexglobal.com</li>
-                <li>Phone: +1 234 567 890</li>
-                <li>Address: 123 Global Tech Ave, San Francisco, USA</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 InnovexGlobal. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 InnovexGlobal. All rights reserved.</p>
+        <p>Visit our <a href="https://www.innovexglobal.com" target="_blank">website</a> for more information.</p>
     </footer>
+
 </body>
 </html>
