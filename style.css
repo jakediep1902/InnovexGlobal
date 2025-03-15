@@ -34,6 +34,13 @@ p {
     padding: 20px;
 }
 
+.company-logo {
+    display: block;
+    margin: 0 auto; /* Căn giữa */
+    width: 300px; /* Độ rộng lớn hơn */
+    height: auto; /* Giữ tỷ lệ ảnh */
+}
+
 /* Card sản phẩm */
 .product {
     width: 320px;
@@ -108,3 +115,77 @@ footer {
     color: white;
     font-size: 1em;
 }
+/* Header chính */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40; /* Màu xanh đậm */
+    padding: 15px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+    width: 100px; /* Điều chỉnh kích thước logo */
+    height: auto;
+}
+
+/* Menu điều hướng */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #FFD700; /* Màu vàng khi hover */
+}
+
+/* Nút gọi ngay */
+.call-button {
+    background-color: #FF5722; /* Màu cam */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.call-button:hover {
+    background-color: #E64A19; /* Màu cam đậm khi hover */
+}
+/* Nút Zalo */
+.zalo-button {
+    background-color: #0088FF; /* Màu xanh Zalo */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.zalo-button:hover {
+    background-color: #0066CC; /* Màu xanh đậm khi hover */
+}
+
