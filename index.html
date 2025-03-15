@@ -1,155 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>InnovexGlobal</title>
-    <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        /* Header Styling */
-        header {
-            text-align: center;
-            background: #4CAF50;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        /* Section Styling */
-        section {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        section .info {
-            width: 45%;
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        section .info h2 {
-            color: #4CAF50;
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        section .info p {
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
-
-        section .info .contact {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        section .images {
-            width: 45%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        section .images img {
-            width: 48%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border-radius: 5px;
-        }
-
-        footer p {
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlazorApp</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="BlazorApp.styles.css" rel="stylesheet" />
 </head>
+
 <body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
 
-    <header>
-        <h1>Welcome to Innovex Global</h1>
-        <p>Your trusted partner in export and technology solutions</p>
-    </header>
-
-    <section>
-        <div class="info">
-            <h2>About Us</h2>
-            <p>InnovexGlobal specializes in innovative technology solutions and high-quality export services. We bridge the gap between businesses globally with cutting-edge technologies and efficient export practices.</p>
-            <p class="contact">Contact us at: +84 84949 6767 - Mr.Duong (Jake)</p>
-        </div>
-
-        <div class="images">
-            <img src="https://via.placeholder.com/300x200" alt="Technology Image 1">
-            <img src="https://via.placeholder.com/300x200" alt="Export Image 1">
-        </div>
-    </section>
-
-    <section>
-        <div class="images">
-            <img src="https://via.placeholder.com/300x200" alt="Technology Image 2">
-            <img src="https://via.placeholder.com/300x200" alt="Export Image 2">
-        </div>
-
-        <div class="info">
-            <h2>Our Services</h2>
-            <p>We offer a range of services to our clients, including technology consulting, product export, and business strategy development. Our team is dedicated to helping you succeed in the global market.</p>
-            <p class="contact">Call us now: +84 84949 6767</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 InnovexGlobal. All rights reserved.</p>
-        <p>Visit our <a href="https://www.innovexglobal.com" target="_blank">website</a> for more information.</p>
-    </footer>
-
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
+
 </html>
