@@ -3,98 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnovexGlobal - Xuất khẩu Nông sản</title>
+    <title>Innovex Global - Nông sản</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset mặc định */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            box-sizing: border-box;
+        }
+
+        /* Thiết lập chung */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #2c6e49;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Bố cục sản phẩm */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            width: 320px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
         }
-        header {
-            background-color: #28a745;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #28a745;
-            color: white;
-        }
+
         .product img {
             width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
-            margin-top: 10px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+            font-size: 1.4em;
+            color: #2c6e49;
+        }
+
+        .product p {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: #2c6e49;
+            color: white;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <header>
-        Công ty TNHH Công Nghệ và Xuất Khẩu Innovex Global
-    </header>
-    <div class="container">
-        <h2>Liên hệ</h2>
-        <p><strong>Phone:</strong> +84 8 4949 6767 (Mr.Dương - Jake)</p>
-        
-        <h2>Sản phẩm của chúng tôi</h2>
-        
+
+    <h1>Chào mừng đến với Innovex Global</h1>
+    <p>Chúng tôi chuyên xuất khẩu nông sản: Tiêu đen, Gừng các loại</p>
+
+    <div class="product-container">
         <div class="product">
+            <img src="https://images.unsplash.com/photo-1573414405995-2012861b74e0?q=80&w=600&auto=format&fit=crop" alt="Tiêu đen">
             <h3>Tiêu đen</h3>
-            <img src="https://example.com/black-pepper.jpg" alt="Tiêu đen">
-            <table>
-                <tr>
-                    <th>Loại</th>
-                    <th>Giá (USD/kg)</th>
-                </tr>
-                <tr>
-                    <td>Tiêu đen loại 1</td>
-                    <td>5.00</td>
-                </tr>
-                <tr>
-                    <td>Tiêu đen loại 2</td>
-                    <td>4.50</td>
-                </tr>
-            </table>
+            <p>Giá: $10/kg</p>
         </div>
-        
+
         <div class="product">
-            <h3>Gừng</h3>
-            <img src="https://example.com/ginger.jpg" alt="Gừng">
-            <table>
-                <tr>
-                    <th>Loại</th>
-                    <th>Giá (USD/kg)</th>
-                </tr>
-                <tr>
-                    <td>Gừng tươi</td>
-                    <td>3.00</td>
-                </tr>
-                <tr>
-                    <td>Gừng khô</td>
-                    <td>4.00</td>
-                </tr>
-            </table>
+            <img src="https://static.kinhtedothi.vn/images/upload/2021/12/19/ea4a7274-efa1-47e9-b6dd-c23799707242.jpg" alt="Gừng">
+            <h3>Gừng tươi</h3>
+            <p>Giá: $5/kg</p>
         </div>
     </div>
+
+    <footer>
+        &copy; 2025 Innovex Global. All rights reserved.
+    </footer>
+
 </body>
 </html>
