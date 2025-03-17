@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XUCANA</title>
+    <title>INNOVEX GLOBAL</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -20,7 +20,7 @@
                 <li><a href="lienhe.html">📞 Liên hệ</a></li>
             </ul>
         </nav>
-        <a href="tel:+84346426979" class="call-button">📞 Gọi ngay</a>
+        <a href="tel:+84849496767" class="call-button">📞 Gọi ngay</a>
     </header>
     <div id="content"></div> <!-- Phần tử để hiển thị nội dung -->
    
@@ -39,7 +39,7 @@
         <a href="#" onclick="checkAdminPassword()">🔑 ADMIN</a>
     </footer>
     <footer>
-        <p>&copy; 2024 XUCANA. All rights reserved.</p>
+        <p>&copy; 2024 INNOVEX GLOBAL. All rights reserved.</p>
     </footer>
 
 <script>
@@ -129,9 +129,8 @@ function updateProductList(data) {
                 const productData = JSON.parse(data[key]); // Chuyển đổi từ chuỗi JSON sang object
                 
                 //const price = productData.price || "Đang cập nhật";
-                const price = (productData.price !== undefined && Number(productData.price) > 0) 
-    ? productData.price 
-    : "Đang cập nhật";
+                const price = (productData.price !== undefined && Number(productData.price) > 0)  ? productData.price  : "Đang cập nhật";
+                //let priceK = Math.round(price/1000);
 
                 console.log("####################",price)
                 //if (Number(price) < 0) continue;
@@ -181,9 +180,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </script>
 <div class="container">
-    <a href="tel:+84346426979" class="button">📞 Liên hệ: Ngọc Anh</a>
-    <a href="https://zalo.me/0346426979" class="button">💬 Nhắn Zalo</a>
-    <!-- <a href="En.html" class="button">🌐 English</a> -->
+    <a href="tel:+84849496767" class="button">📞 Liên hệ: Mr.Dương - Jake</a>
+    <a href="https://zalo.me/0906654867" class="button">💬 Nhắn Zalo</a>
+    <a href="https://wa.me/84849496767" class="button">💬 WhatsApp</a>
+    <a href="En.html" class="button">🌐 English</a>
+   
 </div>
 </body>
 </html>

@@ -4,17 +4,17 @@ function sayHello(name) {
 sayHello("TypeScript");
 function GetSCkey()
 {
-    return "IPR43Z1OX7DYWORMIXIRZNFYDZ4GTOYNOX75N1N8UDDSCFY3WT"
+    return "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"
 }
 function GetTitleID()
 {
-    return "CEB9E"
+    return "1522DF"
 }
 // Đảm bảo code chạy sau khi DOM đã tải
 document.addEventListener("DOMContentLoaded", function () {
     const htmlContent = `
-        <h1>Trà sữa XUCANA xin chào</h1>
-        <p>Uy tín, Chất lượng, Tận tâm</p>
+        <h1>Innovex Global</h1>
+        <p>Giải pháp công nghệ và xuất khẩu</p>
     `;
 
     document.getElementById("content").innerHTML = htmlContent;
