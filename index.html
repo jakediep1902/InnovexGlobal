@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovex Global</title>
+    <title>XUCANA</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -11,7 +11,7 @@
     <!-- Header -->
     <header class="main-header">
         <div class="logo">
-            <img src="images/logo.jpg" alt="Innovex Global">
+            <!-- <img src="images/logo.jpg" alt="Innovex Global"> -->
         </div>
         <nav class="nav-menu">
             <ul>
@@ -20,11 +20,11 @@
                 <li><a href="lienhe.html">📞 Liên hệ</a></li>
             </ul>
         </nav>
-        <a href="tel:+84849496767" class="call-button">📞 Gọi ngay</a>
+        <a href="tel:+84346426979" class="call-button">📞 Gọi ngay</a>
     </header>
-
-    <h1>Chào mừng đến với Innovex Global</h1>
-    <p>Giải pháp công nghệ và xuất khẩu</p>
+    <div id="content"></div> <!-- Phần tử để hiển thị nội dung -->
+    <!-- <h1>Trà sữa XUCANA xin chào</h1>
+    <p>Uy tín, Chất lượng, Tận tâm</p> -->
 
     <div class="product-container">
         <!-- <div class="product" id="1" data-name="Fresh Ginger">
@@ -33,35 +33,6 @@
             <p class="price">Giá: Đang tải...</p>
         </div> -->
     
-        <!-- <div class="product" id="2" data-name="black pepper">
-            <img src="https://static.kinhtedothi.vn/images/upload/2021/12/19/ea4a7274-efa1-47e9-b6dd-c23799707242.jpg" alt="Tiêu Đen">
-            <h3>Tiêu Đen</h3>
-            <p class="price">Giá: Đang tải...</p>
-        </div>
-    
-        <div class="product" id="3" data-name="garlic">
-            <img src="https://product.hstatic.net/1000178034/product/toi_cu_to_-_1kg_370a8b9654914afca274dd65eff74c08_4761b715a06d4d0b829d2e54689d170d_master.jpg" alt="Tỏi">
-            <h3>Tỏi</h3>
-            <p class="price">Giá: Đang tải...</p>
-        </div>
-    
-        <div class="product" id="4" data-name="chili">
-            <img src="https://suckhoedoisong.qltns.mediacdn.vn/2015/1-ot-cay-1424484052730.jpg" alt="Ớt Tươi">
-            <h3>Ớt Tươi</h3>
-            <p class="price">Giá: Đang tải...</p>
-        </div>
-    
-        <div class="product" id="5" data-name="banana">
-            <img src="https://giongchuoicaymo.com/wp-content/uploads/2021/05/chuoi-laba-da-lat-428-1.jpg" alt="Chuối">
-            <h3>Chuối</h3>
-            <p class="price">Giá: Đang tải...</p>
-        </div>
-    
-        <div class="product" id="6" data-name="cacao">
-            <img src="https://villagecacao.com/uploads/shops/2021_04/cacao.jpg" alt="Ca Cao">
-            <h3>Ca Cao</h3>
-            <p class="price">Giá: Đang tải...</p>
-        </div>  -->
     </div>
     
     <footer>
@@ -69,63 +40,13 @@
         <a href="#" onclick="checkAdminPassword()">🔑 ADMIN</a>
     </footer>
     <footer>
-        <p>&copy; 2024 InnovexGlobal. All rights reserved.</p>
+        <p>&copy; 2024 XUCANA. All rights reserved.</p>
     </footer>
-
-    <!-- <script>
-        async function getPrice() {
-            const url = "https://1c2026.playfabapi.com/Admin/GetTitleData";
-            const secretKey = "JJBYCPBIWIIQM6QRHIXFGI8NDOY5DSDNH5T1HAI1WBRUJ3CURS"; // Thay bằng Secret Key của bạn
-
-            try {
-                const response = await fetch(url, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-SecretKey": secretKey
-                    },
-                    body: JSON.stringify({})
-                });
-
-                const result = await response.json();
-                console.log("Response:", result);
-
-                if (response.ok && result.data && result.data.Data) {
-                    let productData = result.data.Data; // Lấy dữ liệu sản phẩm từ API
-
-                    document.querySelectorAll(".product").forEach(product => {
-                        let productName = product.getAttribute("data-name"); // Lấy tên sản phẩm từ `data-name`
-                        if (productData[productName]) {
-                            product.querySelector(".price").innerText = `Giá: ${productData[productName]} VNĐ/kg`;
-                        } else {
-                            product.querySelector(".price").innerText = "Giá: Không có sẵn";
-                        }
-                    });
-                } else {
-                    document.querySelectorAll(".price").forEach(p => p.innerText = "Giá: Không thể tải");
-                }
-            } catch (error) {
-                console.error("Error:", error);
-                document.querySelectorAll(".price").forEach(p => p.innerText = "Giá: Lỗi tải dữ liệu");
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", getPrice);
-
-        function checkAdminPassword() {
-        let password = prompt("Nhập mật khẩu ADMIN:");
-        if (password === "123456") {  // 🔑 Thay "123456" bằng mật khẩu thực tế
-            window.location.href = "admin.html";
-        } else if (password !== null) {
-            alert("Sai mật khẩu! Vui lòng thử lại.");
-        }
-    }
-    </script> -->
 
 <script>
 
-const titleID = "1522DF"
-const secretKey = "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"; // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
+const titleID = GetTitleID();
+const secretKey =  GetSCkey(); // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
 
 function checkAdminPassword() {
     const passwordKey = "admin_password_verified";
@@ -260,6 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 </script>
-
+<div class="container">
+    <a href="tel:+84346426979" class="button">📞 Liên hệ: 0346426979 (Ngọc Anh)</a>
+    <a href="https://zalo.me/0346426979" class="button">💬 Nhắn Zalo</a>
+    <!-- <a href="En.html" class="button">🌐 English</a> -->
+</div>
 </body>
 </html>
