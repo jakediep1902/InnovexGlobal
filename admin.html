@@ -44,8 +44,9 @@
 
     <script>
       
+     
+      const titleID = "1522DF"
       const secretKey = "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"; // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
-   
 
 
 
@@ -64,7 +65,7 @@ function isImageURLValid(url) {
 document.getElementById("updateProductForm").addEventListener("submit", async function(event) {
     event.preventDefault(); // Ngăn chặn reload trang
 
-    const url = "https://1522DF.playfabapi.com/Admin/SetTitleData";
+    const url = `https://${titleID}.playfabapi.com/Admin/SetTitleData`;
     //const secretKey = "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"; // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
 
     

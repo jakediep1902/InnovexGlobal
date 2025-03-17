@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovex Global</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -26,11 +27,11 @@
     <p>Giải pháp công nghệ và xuất khẩu</p>
 
     <div class="product-container">
-        <div class="product" id="1" data-name="Fresh Ginger">
+        <!-- <div class="product" id="1" data-name="Fresh Ginger">
             <img src="https://images.unsplash.com/photo-1573414405995-2012861b74e0?q=80&w=600&auto=format&fit=crop" alt="Gừng Tươi">
             <h3>Gừng Tươi</h3>
             <p class="price">Giá: Đang tải...</p>
-        </div>
+        </div> -->
     
         <!-- <div class="product" id="2" data-name="black pepper">
             <img src="https://static.kinhtedothi.vn/images/upload/2021/12/19/ea4a7274-efa1-47e9-b6dd-c23799707242.jpg" alt="Tiêu Đen">
@@ -123,7 +124,8 @@
 
 <script>
 
-
+const titleID = "1522DF"
+const secretKey = "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"; // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
 
 function checkAdminPassword() {
     const passwordKey = "admin_password_verified";
@@ -165,8 +167,8 @@ const productImages = {
 
 // Hàm gọi PlayFab API để lấy dữ liệu sản phẩm
 async function getPrice() {
-    const url = "https://1522DF.playfabapi.com/Admin/GetTitleData";
-    const secretKey = "MWDS187QTJODWIYBH3B4U4BOHGQ97Y8AWZPGK9YKK66PZEDAZN"; // 🔴 THAY THẾ BẰNG SECRET KEY CỦA BẠN
+    const url = `https://${titleID}.playfabapi.com/Admin/GetTitleData`;
+    
 
     try {
         const response = await fetch(url, {
